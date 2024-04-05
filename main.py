@@ -22,8 +22,10 @@ def on_message(client, userdata, message):
     if payload == "ON":
         print(payload)
         GPIO.output(LED_PIN, GPIO.HIGH)
+        time.slee(2)
     elif payload == "OFF":
         print(payload)
+        time.sleep(2)
         GPIO.output(LED_PIN, GPIO.LOW)
     
 
