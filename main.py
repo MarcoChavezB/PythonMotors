@@ -20,8 +20,10 @@ def on_message(client, userdata, message):
     
     # Enciende o apaga el LED según el mensaje recibido
     if payload == "ON":
+        print(payload)
         GPIO.output(LED_PIN, GPIO.HIGH)
     elif payload == "OFF":
+        print(payload)
         GPIO.output(LED_PIN, GPIO.LOW)
     
 
