@@ -22,9 +22,10 @@ def on_message(client, userdata, message):
         GPIO.output(LED_PIN, GPIO.HIGH)
     elif payload == "OFF":
         GPIO.output(LED_PIN, GPIO.LOW)
+    
 
 # Configura el cliente MQTT
-client = mqtt.Client()
+client = mqtt.Client(protocol=mqtt.MQTTv311)
 client.on_message = on_message
 client.connect(MQTT_BROKER, MQTT_PORT, 60)
 client.subscribe(MQTT_TOPIC)
