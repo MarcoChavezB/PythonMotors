@@ -5,7 +5,7 @@ import time
 # Configura el pin del LED
 LED_PIN = 7
 GPIO.setwarnings(False)
-GPIO.setmode(GPIO.BCM)
+GPIO.setmode(GPIO.BOARD)
 GPIO.setup(LED_PIN, GPIO.OUT)
 
 # Configura los parámetros de conexión MQTT
