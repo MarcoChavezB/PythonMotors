@@ -25,7 +25,7 @@ def on_message(client, userdata, message):
     
 
 # Configura el cliente MQTT
-client = mqtt.Client(protocol=mqtt.MQTTv311)
+client = mqtt.Client()
 client.on_message = on_message
 client.connect(MQTT_BROKER, MQTT_PORT, 60)
 client.subscribe(MQTT_TOPIC)
