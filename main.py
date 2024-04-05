@@ -4,6 +4,7 @@ import time
 
 # Configura el pin del LED
 LED_PIN = 7
+GPIO.setwarnings(False)
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(LED_PIN, GPIO.OUT)
 
