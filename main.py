@@ -1,4 +1,4 @@
-import RPI.GPIO as GPIO
+import RPi.GPIO as GPIO
 
 pin = 7
 GPIO.setmode(GPIO.BOARD)
